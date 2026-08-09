@@ -11,7 +11,7 @@ permissions:
   issues: write
 
 jobs:
-  cadastre-extract:
+  download_cm_ci:
     runs-on: ubuntu-latest
 
     steps:
