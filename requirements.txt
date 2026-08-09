@@ -1,0 +1,16 @@
+# Web
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+urllib3>=2.0.0
+
+# Géospatial
+geopandas>=0.14.0
+shapely>=2.0.0
+pandas>=2.0.0
+fiona>=1.9.0
+pyproj>=3.6.0
+
+# Google Drive
+google-auth>=2.23.0
+google-api-python-client>=2.100.0

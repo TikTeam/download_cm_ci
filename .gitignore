@@ -1,0 +1,26 @@
+# Répertoires générés
+data/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets & Credentials (NE JAMAIS COMMITER)
+secrets/
+*.json
+!package.json
+!.github/**/*.json
+
+# Configuration locale (contient secrets)
+.env
+.env.local
+.env.*.local
+
+# Fichiers temporaires
+/tmp/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
