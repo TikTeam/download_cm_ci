@@ -1,4 +1,4 @@
-name: "⛏️ Extraction du cadastre minier (6h)"
+name: "⛏️ download cadastre minier (6h)"
 
 on:
   schedule:
