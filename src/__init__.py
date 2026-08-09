@@ -1,0 +1,1 @@
+"""src — Package principal du scraper cadastre minier CI."""
