@@ -81,7 +81,7 @@ def run() -> int:
         
         if len(uploaded) != len(saved):
             failed = [str(path) for path in saved
-                      if path.name not in uploaded
+                      if path.name not in uploaded]
             raise RuntimeError(
                 f"Upload partiel : {len(uploaded)}/{len(saved)} fichiers uploadés. "
                 f"Échecs : {failed}")
