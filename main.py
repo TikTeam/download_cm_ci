@@ -75,13 +75,20 @@ def run() -> int:
         
         # Upload Google Drive
         uploaded = storage.upload_outputs(saved)
-        if uploaded:
-            logger.info(
-                "✅ %d fichier(s) uploadé(s) : %s",
-                len(uploaded), list(uploaded.keys()),
-            )
-        else:
-            logger.warning("Aucun fichier uploadé sur Drive.")
+
+        if not uploaded:
+            raise RuntimeError("Aucun fichier n'a été uploadé sur Google Drive.")
+        
+        if len(uploaded) != len(saved):
+            failed = [str(path) for path in saved
+                      if path.name not in uploaded
+            raise RuntimeError(
+                f"Upload partiel : {len(uploaded)}/{len(saved)} fichiers uploadés. "
+                f"Échecs : {failed}")
+        
+        logger.info("✅ %d fichier(s) uploadé(s) : %s",
+                    len(uploaded),
+                    list(uploaded.keys()))
 
         logger.info("══════════════════════════════════════════════════════")
         logger.info("  Pipeline terminé avec succès.")
