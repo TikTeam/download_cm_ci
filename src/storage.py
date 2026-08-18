@@ -23,7 +23,7 @@ _DRIVERS: dict[str, str] = {
     ".gpkg": "GPKG",
     ".shp":  "ESRI Shapefile",
 }
-_GDRIVE_SCOPES = ["https://www.googleapis.com/auth/drive.file"]
+_GDRIVE_SCOPES = ["https://www.googleapis.com/auth/drive"]
 
 
 # ──────────────────────────────────────────────────────────────────────────────
